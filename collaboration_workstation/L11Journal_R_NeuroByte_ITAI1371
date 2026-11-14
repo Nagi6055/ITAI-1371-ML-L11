@@ -1,10 +1,32 @@
 1.	INTRODUCTION – (MARCUS)
-With the development of artificial intelligence and machine learning techniques moving from theory to practice, the question of maximizing the effectiveness of the models has become an important engineering task. In a machine learning workflow, the capabilities of a model are controlled not only by the patterns obtained from the training data but also by the parameters which have been defined before the training process itself. Learning how to manage these parameters properly is the key to developing efficient predictive systems.
+With the development of artificial intelligence and machine learning techniques moving from theory to practice, the question of maximizing the effectiveness of the models has 
+become an important engineering task. In a machine learning workflow, the capabilities of a model are controlled not only by the patterns obtained from the training data but 
+also by the parameters which have been defined before the training process itself. Learning how to manage these parameters properly is the key to developing efficient predictive 
+systems.
+
 2.	DESCRIPTION OF EXPERIENCE/TOPIC - (MARCUS)
-The experiment was aimed at tuning the RandomForestClassifier that had been trained with the help of the Iris dataset. The process started from creating the baseline model and then proceeded to tuning using manually performed methods as well as completely automated approaches. Firstly, we investigated the method called Grid Search (GridSearchCV). This approach allows testing all possible combinations of the parameters inside a specific area with the use of cross-validation to find the best ones. Secondly, we used the method of Random Search (RandomizedSearchCV). It allowed exploring a significantly larger area of parameters and picking up the optimal configurations at random. Finally, the experiment ended with studying the Automated Machine Learning (AutoML) method with the help of AutoGluon.
+The experiment was aimed at tuning the RandomForestClassifier that had been trained with the help of the Iris dataset. The process started from creating the baseline model and then 
+proceeded to tuning using manually performed methods as well as completely automated approaches. Firstly, we investigated the method called Grid Search (GridSearchCV). This approach 
+allows testing all possible combinations of the parameters inside a specific area with the use of cross-validation to find the best ones. Secondly, we used the method of Random Search 
+(RandomizedSearchCV). It allowed exploring a significantly larger area of parameters and picking up the optimal configurations at random. Finally, the experiment ended with studying 
+the Automated Machine Learning (AutoML) method with the help of AutoGluon.
+
 3.	PERSONAL REFLECTION – (MARCUS)
-Going through this lab has helped me gain practical insights about the immense untapped potential that lies beyond the conventional settings for machine learning algorithms. The whole process of manually implementing the Grid Search and Random Search algorithm helped understand the common tradeoff between comprehensive accuracy and efficiency while searching the parameter space of high dimensions. Seeing AutoGluon do everything from data preparation, feature creation, and ensembling of models in just a few minutes has totally changed my outlook toward workflow automation. This experience made me realize that although the manual approach helps develop an understanding of the process of learning of the model, AutoML is a scaling factor for the same.
+Going through this lab has helped me gain practical insights about the immense untapped potential that lies beyond the conventional settings for machine learning algorithms. 
+The whole process of manually implementing the Grid Search and Random Search algorithm helped understand the common tradeoff between comprehensive accuracy and efficiency while 
+searching the parameter space of high dimensions. Seeing AutoGluon do everything from data preparation, feature creation, and ensembling of models in just a few minutes has totally 
+changed my outlook toward workflow automation. This experience made me realize that although the manual approach helps develop an understanding of the process of learning of the model,
+AutoML is a scaling factor for the same.
+
 4.	DISCUSSION OF IMPROVEMENT AND LEARNING - (Safa B.)
-This lab helped me improve how I look at a model, not just whether the code runs. I learned the difference between parameters the model learns by itself and hyperparameters that we have to pick before training, like n_estimators and max_depth. I also understood how cross-validation works, because the cross-validated score was 94% while the test score was 100%, and I learned the cross-validation score is more honest since it checks the model on 5 different splits instead of one small test set. Comparing Grid Search and Random Search showed me that you don’t always need to try every combination to find a good model. Next time I want to try tuning on a bigger and messier dataset, so I can actually see the accuracy go up, and maybe compare it with what AutoGluon picks.
+This lab helped me improve how I look at a model, not just whether the code runs. I learned the difference between parameters the model learns by itself and hyperparameters that 
+we have to pick before training, like n_estimators and max_depth. I also understood how cross-validation works, because the cross-validated score was 94% while the test score was 
+100%, and I learned the cross-validation score is more honest since it checks the model on 5 different splits instead of one small test set. Comparing Grid Search and Random Search 
+showed me that you don’t always need to try every combination to find a good model. Next time I want to try tuning on a bigger and messier dataset, so I can actually see the accuracy 
+go up, and maybe compare it with what AutoGluon picks.
+
 5.	CONCLUSION - (Safa B.)
-Overall, Lab 11 showed me that building a model is only the first step, and choosing the right settings is just as important. We started with a basic Random Forest, then used Grid Search to test every combination and Random Search to test only a few random ones, and both found good settings. On the Iris dataset tuning did not change the accuracy because the basic model was already very good, but it showed me how tuning works and when it is worth the time. Finally, AutoGluon showed how AutoML can try many different models and combine the best ones on its own. This lab connected everything we learned before, from preparing the data to training and now improving the model.
+Overall, Lab 11 showed me that building a model is only the first step, and choosing the right settings is just as important. We started with a basic Random Forest, then used Grid 
+Search to test every combination and Random Search to test only a few random ones, and both found good settings. On the Iris dataset tuning did not change the accuracy because the 
+basic model was already very good, but it showed me how tuning works and when it is worth the time. Finally, AutoGluon showed how AutoML can try many different models and combine the 
+best ones on its own. This lab connected everything we learned before, from preparing the data to training and now improving the model.
